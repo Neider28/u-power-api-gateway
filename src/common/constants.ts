@@ -1,0 +1,30 @@
+export enum RabbitMQ {
+  BookingQueue = 'bookings',
+  UserQueue = 'users',
+  AuthQueue = 'auth',
+}
+
+export enum BookingMSG {
+  CREATE = 'CREATE_BOOKING',
+  FIND_ALL = 'FIND_BOOKINGS',
+  FIND_PENDINGS = 'FIND_PENDINGS_BOOKING',
+  UPDATE = 'UPDATE_BOOKING',
+  DELETE = 'DELETE_BOOKING',
+  VERIFY = 'VERIFY_BOOKING',
+  CANCEL = 'CANCEL_BOOKING',
+  REGISTER_ATTENDANCE = 'REGISTER_ATTENDANCE',
+  HISTORY = 'HISTORY',
+  ATTENDED = 'ATTENDED',
+  NO_ATTENDED = 'NO_ATTENDED',
+  HISTORY_BY_USER = 'HISTORY_BY_USER',
+}
+
+export enum UserMSG {
+  UPDATE = 'UPDATE_USER',
+  FIND_STUDENTS = 'FIND_STUDENTS',
+}
+
+export enum AuthMSG {
+  LOGIN_GOOGLE = 'LOGIN_GOOGLE',
+  PROFILE = 'PROFILE',
+}
